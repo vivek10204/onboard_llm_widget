@@ -3,8 +3,6 @@
 // CHANGES:
 // 1. Changed gemma.png icon for chat reply message
 
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_gemma/flutter_gemma.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
@@ -261,8 +259,10 @@ class ChatMessageWidget extends StatelessWidget {
   }
   ////////////////////////////
 
+  /*
   Widget _circled(String image) => CircleAvatar(
         backgroundColor: Colors.transparent,
         foregroundImage: AssetImage(image),
       );
+   */
 }

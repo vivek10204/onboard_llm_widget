@@ -1,0 +1,225 @@
+cd /Users/vivekkukreja/workspace/wheresmymoney_with_ai_and_rag1_current/lib/llm_widget
+
+
+
+########## 1. NO CHANGES:
+
+
+1. diff constants/app_keys.dart ../../../flutter_gemma/example/lib/constants/app_keys.dart 
+#NONE
+#DONE
+
+2. diff models/base_model.dart ../../../flutter_gemma/example/lib/models/base_model.dart 
+#NONE
+#DONE
+
+3. diff models/embedding_model.dart ../../../flutter_gemma/example/lib/models/embedding_model.dart
+#NONE
+#DONE
+
+4. diff models/model.dart ../../../flutter_gemma/example/lib/models/model.dart 
+#NONE
+#DONE
+
+5. diff rag/widgets/result_card.dart ../../../flutter_gemma/example/lib/rag_demo/widgets/result_card.dart
+#NONE
+#DONE
+
+6. diff services/auth_token_service.dart ../../../flutter_gemma/example/lib/services/auth_token_service.dart 
+#NONE
+#DONE
+
+7. diff widgets/loading_widget.dart ../../../flutter_gemma/example/lib/loading_widget.dart 
+#NONE
+#DONE
+
+8. diff widgets/thinking_widget.dart ../../../flutter_gemma/example/lib/thinking_widget.dart
+#NONE
+#DONE
+
+9. diff services/gemma_service.dart ../../../flutter_gemma/example/lib/services/gemma_service.dart 
+#NONE
+#DONE
+
+
+
+
+
+
+
+
+
+
+
+
+
+########## 2. SMALL CHANGES:
+
+
+1. diff rag/widgets/status_card.dart ../../../flutter_gemma/example/lib/rag_demo/widgets/status_card.dart 
+#Diff small
+#DONE
+
+2. diff services/embedding_download_service.dart ../../../flutter_gemma/example/lib/services/embedding_download_service.dart 
+#Diff small
+#DONE
+
+3. diff widgets/chat_message.dart ../../../flutter_gemma/example/lib/chat_message.dart 
+#Diff small
+#DONE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+########## 3. MEDIUM CHANGES:
+
+
+1. diff rag/widgets/search_section.dart ../../../flutter_gemma/example/lib/rag_demo/widgets/search_section.dart
+#Diff medium
+#DONE
+
+2. diff rag/widgets/knowledge_base_section.dart ../../../flutter_gemma/example/lib/rag_demo/widgets/knowledge_base_section.dart 
+#Diff medium
+#DONE
+
+
+
+
+3. diff widgets/gemma_input_field.dart ../../../flutter_gemma/example/lib/gemma_input_field.dart 
+#Diff medium
+#DONE
+
+4. diff widgets/chat_input_field.dart ../../../flutter_gemma/example/lib/chat_input_field.dart 
+#Diff medium
+#DONE
+
+
+
+
+
+
+
+TBDDDDDDDDDD
+
+
+
+
+########## 3. LARGE CHANGES:
+
+
+1. diff services/model_download_service.dart ../../../flutter_gemma/example/lib/services/model_download_service.dart 
+#Diff large
+#IMPDIFF
+#DONE
+
+2. diff chat_screen.dart ../../../flutter_gemma/example/lib/chat_screen.dart 
+#Diff large
+#IMPDIFF
+
+3. diff chat_widget.dart ../../../flutter_gemma/example/lib/chat_widget.dart 
+#Diff large
+#IMPDIFF
+
+4. diff rag/rag_demo_screen.dart ../../../flutter_gemma/example/lib/rag_demo_screen.dart
+#Diff large
+#IMPDIFF
+#DONE
+
+
+
+
+
+
+
+########## 4. NEW FILES:
+
+
+1. ls services/last_selection_prefs.dart
+#Diff new
+#DONE
+
+2. ls services/prompt_prefs.dart
+#Diff new
+#DONE (TBD IMP: Make sure prefs implementation matches for prompt and last selection. And chat storage too?)
+
+3. ls services/chat_storage.dart
+#Diff new
+#DONE
+#TBD IMP: Why so many uses of save() in ChatScreen?
+
+4. ls rag/widgets/search_parameters_section.dart
+#Diff new
+#DONE
+
+
+
+
+
+
+
+
+
+5. ls llm_widget.dart
+#Diff new (inspired from example app?)
+#IMPDIFF
+
+6. ls preload_screen.dart
+#Diff new
+#IMPDIFF
+#DONE (TBD Common code with both models download, selection screens, rag demo screen???)
+
+7. ls the_download_screen.dart
+#Diff new (inspired from both download screens, RAG and LLM)
+#IMPDIFF
+#DONE
+
+8. ls the_selection_screen.dart
+#Diff new (inspired from both selection screens, RAG and LLM)
+#IMPDIFF
+#DONE
+
+
+
+
+
+
+
+
+
+
+
+
+
+TREE:
+	ChatScreen(
+
+		ChatListWidget(
+
+			//THIS IS WHERE THE GEMMA RESPONSE IS PRINTED
+			GemmaInputField(
+				streamHandler: _handleGemmaResponse
+				isProcessing
+				useSyncMode
+				onThinkingCompleted
+				_processMessages
+					processMessage
+						addQuery
+
+
+			//THIS IS WHERE THE USER ENTERS QUERY IN CHAT
+			ChatInputField(
+				isGenerating
+				handleSubmitted
+				handleStopped
+				

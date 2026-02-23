@@ -20,7 +20,7 @@ dependencies:
   url_launcher: ^6.2.5
 
   # For llm_widget TBD123
-  flutter_gemma: ^0.12.1
+  flutter_gemma: ^0.12.4
   #flutter_gemma:
   #  path: flutter_gemma
 

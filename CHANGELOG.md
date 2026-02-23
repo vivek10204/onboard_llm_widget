@@ -1,3 +1,7 @@
+## 0.0.2
+
+* Fix color scheme
+
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Initial commits

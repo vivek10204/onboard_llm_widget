@@ -204,18 +204,20 @@ class _PreloadScreenState extends State<PreloadScreen> {
     try {
       // Step 1: Download
       if (!_isChatModelDone) {
-        if (mounted) setState(() => _processingChatDownload = true);
-        await _downloadGeneric(
-          url: widget.model!.url,
-          filename: widget.model!.filename,
-          licenseUrl: widget.model!.licenseUrl,
-          needsAuth: widget.model!.needsAuth,
-          displayName: widget.model!.displayName,
-          onProgress: (p) {
-            if (!_showRetry) setState(() => _modelProgress = p);
-          },
-        );
-        if (_showRetry) return false;
+        if (!widget.model!.localModel) {
+          if (mounted) setState(() => _processingChatDownload = true);
+          await _downloadGeneric(
+            url: widget.model!.url,
+            filename: widget.model!.filename,
+            licenseUrl: widget.model!.licenseUrl,
+            needsAuth: widget.model!.needsAuth,
+            displayName: widget.model!.displayName,
+            onProgress: (p) {
+              if (!_showRetry) setState(() => _modelProgress = p);
+            },
+          );
+          if (_showRetry) return false;
+        }
 
         if (mounted) {
           setState(() {

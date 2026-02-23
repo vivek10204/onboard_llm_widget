@@ -603,7 +603,7 @@ class _ModelCardState extends State<ModelCard> {
             ),
             trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey[400]),
             onTap: () async {
-              if (!kIsWeb) {
+              if (!kIsWeb && !widget.model.localModel) { //TBD1
                 await Navigator.push(
                   context,
                   MaterialPageRoute<void>(

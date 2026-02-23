@@ -43,9 +43,10 @@ class LlmWidget extends StatefulWidget {
 
     this.appName,
     this.chatAvatarImagePath,
-
     this.preamble,
+    this.backgroundColor,
 
+    this.bypassSelectionScreen,
     this.enableRag,
     this.enableRagButton1,
     this.enableRagButton2,
@@ -58,16 +59,13 @@ class LlmWidget extends StatefulWidget {
 
     this.preloadEmbeddingModelName,
     this.preloadEmbeddingModelBackend,
-    ///////
 
     this.preloadInputData,
     this.preloadInputDataMandatory, // String (yes/no/ask)
-    this.outputSchema,
+    ///////
 
+    //TBDO this.outputSchema,
 
-    this.bypassSelectionScreen,
-
-    this.backgroundColor,
   });
 
   final String? appName;
@@ -91,7 +89,7 @@ class LlmWidget extends StatefulWidget {
   final String? preloadInputDataMandatory;
 
 
-  final String? outputSchema;
+  //TBDO final String? outputSchema;
 
   final Color? backgroundColor;
 
@@ -487,7 +485,7 @@ class _LlmWidgetState extends State<LlmWidget> {
     await PromptPrefs.save(
       preamble: widget.preamble,
       inputCsv: widget.preloadInputData,
-      outputSchema: widget.outputSchema,
+      //TBDO outputSchema: widget.outputSchema,
     );
   }
 

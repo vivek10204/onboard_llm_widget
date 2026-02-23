@@ -386,7 +386,7 @@ class _TheDownloadScreenState extends State<TheDownloadScreen> {
   @override
   Widget build(BuildContext context) {
     final int? v = storage.read('llmWidgetBackgroundColor');
-    final bg = v != null ? Color(v) : Colors.blueGrey[200]!;
+    final bg = v != null ? Color(v) : Colors.grey[900]!;
 
     // IMP CHANGED: Updated Logic to use explicit flag for embeddings
     bool isDownloading = false;
@@ -424,6 +424,7 @@ class _TheDownloadScreenState extends State<TheDownloadScreen> {
               TextField(
                 controller: _tokenController,
                 obscureText: true,
+                style: TextStyle(color: Colors.grey[500]), //TBD1
                 decoration: InputDecoration(
                   labelText: 'Enter HuggingFace AccessToken',
                   labelStyle: TextStyle(color: Colors.grey[500]), //TBD1

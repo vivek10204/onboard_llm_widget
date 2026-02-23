@@ -203,7 +203,7 @@ class _TheSelectionScreenState extends State<TheSelectionScreen> {
   @override
   Widget build(BuildContext context) {
     final int? v = storage.read('llmWidgetBackgroundColor');
-    final bg = v != null ? Color(v) : Colors.blueGrey[200]!;
+    final bg = v != null ? Color(v) : Colors.grey[900]!;
 
     // IMP CHANGED: If bypassing, show a loader while we redirect, to avoid flicker
     final bypass = storage.read('bypassSelectionScreen') ?? false;
@@ -705,11 +705,11 @@ class _EmbeddingModelCardState extends State<EmbeddingModelCard> {
                       segments: const [
                         ButtonSegment(
                             value: PreferredBackend.cpu,
-                            label: Text('CPU', style: TextStyle(fontSize: 12))
+                            label: Text('CPU', style: TextStyle(fontSize: 12, color: Colors.blueGrey)) //TBD1
                         ),
                         ButtonSegment(
                           value: PreferredBackend.gpu,
-                          label: Text('GPU', style: TextStyle(fontSize: 12)),
+                          label: Text('GPU', style: TextStyle(fontSize: 12, color: Colors.blueGrey)), //TBD1
                           // Enabled now
                         ),
                       ],

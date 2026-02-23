@@ -560,7 +560,7 @@ class _PreloadScreenState extends State<PreloadScreen> {
   @override
   Widget build(BuildContext context) {
     final int? v = storage.read('llmWidgetBackgroundColor');
-    final bg = v != null ? Color(v) : Colors.blueGrey[200]!;
+    final bg = v != null ? Color(v) : Colors.grey[900]!;
 
     return WillPopScope(
       onWillPop: _onWillPop,

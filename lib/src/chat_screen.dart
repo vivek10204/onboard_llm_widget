@@ -556,7 +556,7 @@ class ChatScreenState extends State<ChatScreen> {
     //////
     // IMP CHANGED: Added for bg color
     final int? v = storage.read('llmWidgetBackgroundColor');
-    _backgroundColor = v != null ? Color(v) : Colors.blueGrey[200]!;
+    _backgroundColor = v != null ? Color(v) : Colors.grey[900]!;
     //////
 
     return Scaffold(
@@ -674,7 +674,7 @@ class ChatScreenState extends State<ChatScreen> {
           // IMP CHANGED: Added for top right menu
           // Menu Button
           PopupMenuButton<String>(
-            color: Colors.grey[500], //TBD1
+            color: Colors.grey[800], //TBD1
             itemBuilder: (context) {
               return [
                 // 1. The "Mega-Item" containing RAG Options ONLY

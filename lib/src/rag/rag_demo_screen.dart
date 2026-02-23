@@ -375,7 +375,7 @@ class _RagDemoScreenState extends State<RagDemoScreen> {
 
     // IMP CHANGED: Added for bg color
     final int? v = storage.read('llmWidgetBackgroundColor');
-    final bg = v != null ? Color(v) : Colors.blueGrey[200]!;
+    final bg = v != null ? Color(v) : Colors.grey[900]!;
 
     return Scaffold(
       backgroundColor: bg, // IMP CHANGED: Added

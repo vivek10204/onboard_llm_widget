@@ -113,7 +113,7 @@ class _LlmWidgetState extends State<LlmWidget> {
     // 1. Run Validation before anything else
     _validateInput();
 
-    storage.write('llmWidgetBackgroundColor', (widget.backgroundColor ?? Colors.blueGrey[200])?.value);
+    storage.write('llmWidgetBackgroundColor', (widget.backgroundColor ?? Colors.grey[900])?.value);
     storage.write('enableRag', widget.enableRag ?? false);
     storage.write('enableRagButton1', widget.enableRagButton1 ?? false);
     storage.write('enableRagButton2', widget.enableRagButton2 ?? false);

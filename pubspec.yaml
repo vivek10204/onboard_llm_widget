@@ -3,14 +3,16 @@ description: "A new Flutter package project."
 version: 0.0.1
 homepage: https://github.com/vivek10204/onboard_llm_widget
 
+#environment:
+#  sdk: ^3.10.0-179.0.dev
+#  flutter: ">=1.17.0"
 environment:
-  sdk: ^3.10.0-179.0.dev
-  flutter: ">=1.17.0"
+  sdk: ^3.0.0
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-    flutter: ">=3.0.0"
 
 #########
   file_picker: ^8.3.3

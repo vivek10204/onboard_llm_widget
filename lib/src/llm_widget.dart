@@ -105,7 +105,7 @@ class _LlmWidgetState extends State<LlmWidget> {
   final _navKey = GlobalKey<NavigatorState>();
 
   final storage = GetStorage();
-  
+
   @override
   void initState() {
     super.initState();
@@ -120,9 +120,24 @@ class _LlmWidgetState extends State<LlmWidget> {
     storage.write('bypassSelectionScreen', widget.bypassSelectionScreen ?? false);
     storage.write('chatAvatarImagePath', widget.chatAvatarImagePath ?? '');
 
-    _handlePreloadLogic().then((_) {
-      _persistPromptBitsIfProvided().then((_) => _maybeAutoOpenChat());
-    });
+    // 2. Call the new async initialization sequence
+    _initGemmaAndProceed();
+  }
+
+  // 3. Create this new method right below initState
+  Future<void> _initGemmaAndProceed() async {
+    try {
+      // Initialize Gemma internally
+      await FlutterGemma.initialize();
+    } catch (e) {
+      // Catch silently in case it was already initialized during a previous widget mount
+      debugPrint('FlutterGemma initialization note: $e');
+    }
+
+    // 4. Use await for a much cleaner execution flow than .then() chaining
+    await _handlePreloadLogic();
+    await _persistPromptBitsIfProvided();
+    await _maybeAutoOpenChat();
   }
 
   void _validateInput() {

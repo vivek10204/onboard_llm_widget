@@ -515,7 +515,7 @@ class _ModelCardState extends State<ModelCard> {
                   width: 250,
                   child: Text(
                     widget.model.displayName,
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0, color: Colors.blueGrey), //TBD1
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
@@ -686,7 +686,7 @@ class _EmbeddingModelCardState extends State<EmbeddingModelCard> {
                   width: 250,
                   child: Text(
                     widget.model.displayName,
-                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0, color: Colors.blueGrey), //TBD1
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),

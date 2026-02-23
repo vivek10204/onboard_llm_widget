@@ -1,4 +1,8 @@
 
+## 0.0.5
+
+* Fix more issues
+
 ## 0.0.4
 
 * Fix more issues

@@ -424,11 +424,11 @@ class _TheDownloadScreenState extends State<TheDownloadScreen> {
               TextField(
                 controller: _tokenController,
                 obscureText: true,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'Enter HuggingFace AccessToken',
-                  labelStyle: TextStyle(color: Colors.blueGrey),
+                  labelStyle: TextStyle(color: Colors.grey[500]), //TBD1
                   hintText: 'Paste your Hugging Face access token here',
-                  hintStyle: TextStyle(color: Colors.grey),
+                  hintStyle: const TextStyle(color: Colors.grey),
                 ),
                 onSubmitted: (val) async {
                   if (val.trim().isNotEmpty) {

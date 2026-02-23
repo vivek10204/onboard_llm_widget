@@ -28,7 +28,7 @@ class KnowledgeBaseSection extends StatelessWidget {
       children: [
         const Text(
           '  Upload Knowledge Base',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.cyanAccent), //TBD1
         ),
         const SizedBox(height: 12),
 

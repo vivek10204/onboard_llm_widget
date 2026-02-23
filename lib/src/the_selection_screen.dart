@@ -532,8 +532,8 @@ class _ModelCardState extends State<ModelCard> {
                       const SizedBox(width: 8),
                       SegmentedButton<PreferredBackend>(
                         segments: const [
-                          ButtonSegment(value: PreferredBackend.cpu, label: Text('CPU', style: TextStyle(fontSize: 12))),
-                          ButtonSegment(value: PreferredBackend.gpu, label: Text('GPU', style: TextStyle(fontSize: 12))),
+                          ButtonSegment(value: PreferredBackend.cpu, label: Text('CPU', style: TextStyle(fontSize: 12, color: Colors.blueGrey))), //TBD1
+                          ButtonSegment(value: PreferredBackend.gpu, label: Text('GPU', style: TextStyle(fontSize: 12, color: Colors.blueGrey))), //TBD1
                         ],
                         selected: {selectedBackend ?? PreferredBackend.cpu},
                         onSelectionChanged: (Set<PreferredBackend> selection) {

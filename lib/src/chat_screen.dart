@@ -674,6 +674,7 @@ class ChatScreenState extends State<ChatScreen> {
           // IMP CHANGED: Added for top right menu
           // Menu Button
           PopupMenuButton<String>(
+            color: Colors.grey[500], //TBD1
             itemBuilder: (context) {
               return [
                 // 1. The "Mega-Item" containing RAG Options ONLY

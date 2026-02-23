@@ -24,7 +24,7 @@ class SearchParametersSection extends StatelessWidget {
       children: [
         const Text(
           '  Search Parameters',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.cyanAccent), //TBD1
         ),
         const SizedBox(height: 8),
         Row(
@@ -33,7 +33,9 @@ class SearchParametersSection extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Threshold: ${threshold.toStringAsFixed(2)}'),
+                  Text('Threshold: ${threshold.toStringAsFixed(2)}',
+                    style: TextStyle(fontSize: 12, color: Colors.cyanAccent) //TBD1
+                  ),
                   Slider(
                     value: threshold,
                     min: 0.0,

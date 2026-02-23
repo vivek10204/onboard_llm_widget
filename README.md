@@ -1,39 +1,22 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# onboard_llm_widget
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A powerful, plug-and-play Flutter widget designed to seamlessly onboard users into local Large Language Model (LLM) and Retrieval-Augmented Generation (RAG) experiences. 
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Handling local AI models can be complex. This package provides a complete UI and logic wrapper to handle model downloading, integrity checking, hardware backend selection (CPU/GPU), and data preloading—all before smoothly routing the user to your chat interface.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+* **One-Click AI Setup:** Guides users through downloading and initializing local chat and embedding models.
+* **Smart Caching & Integrity Checks:** Automatically verifies if models are already downloaded (checking file size and existence) to prevent redundant network requests.
+* **RAG Ready:** Built-in support for initializing embedding models and preloading CSV/document data for Retrieval-Augmented Generation.
+* **Hardware Acceleration Selection:** Allows users (or developers) to define `CPU` or `GPU` preferred backends.
+* **Auto-Routing:** Seamlessly bypasses the setup screen if the models are already present and ready to use.
+* **Highly Customizable:** Configure mandatory downloads, background colors, app names, and avatar images to match your branding.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the package to your `pubspec.yaml`:
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```yaml
+dependencies:
+  onboard_llm_widget: ^0.0.1

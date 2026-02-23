@@ -415,7 +415,7 @@ class _TheDownloadScreenState extends State<TheDownloadScreen> {
             Center(
               child: Text(
                 'Download ${widget.model.displayName} Model\n',
-                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.cyan),
+                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.cyanAccent), //TBD1
                 textAlign: TextAlign.center,
               ),
             ),

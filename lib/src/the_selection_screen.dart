@@ -675,7 +675,7 @@ class _EmbeddingModelCardState extends State<EmbeddingModelCard> {
   Widget build(BuildContext context) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12.0),
-      color: (widget.isSelected) ? Colors.blueGrey.shade900 : Colors.black87,
+      color: (widget.isSelected) ? Colors.blueGrey.shade900 : Colors.black26, //TBD1
       child: Column(
         children: [
           ListTile(

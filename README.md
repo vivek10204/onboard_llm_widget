@@ -11,9 +11,9 @@ A massive shoutout to [DenisovAV](https://github.com/DenisovAV) and the [flutter
 
 ## 📸 Screenshots
 
-|                      One-Click Setup                       |                          Seamless Orchestration                          |
-|:----------------------------------------------------------:|:------------------------------------------------------------------------:|
-| <img src="images/screenshot1-one-click-setup.png" alt="One-Click Setup" width="300"/> | <img src="images/screenshot2-seamless-orchestration.png" alt="Seamless Orchestration" width="300"/> |
+|                                        One-Click Setup                                         |                                            Seamless Orchestration                                            |
+|:----------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:|
+|     <img src="images/screenshot1-one-click-setup.png" alt="One-Click Setup" width="300"/>      |     <img src="images/screenshot2-seamless-orchestration.png" alt="Seamless Orchestration" width="300"/>      |
 
 <br>
 

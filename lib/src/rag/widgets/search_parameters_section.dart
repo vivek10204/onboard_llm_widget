@@ -50,7 +50,9 @@ class SearchParametersSection extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Top K: $topK'),
+                  Text('Top K: $topK',
+                      style: TextStyle(fontSize: 12, color: Colors.cyanAccent) //TBD1
+                  ),
                   Slider(
                     value: topK.toDouble(),
                     min: 1,

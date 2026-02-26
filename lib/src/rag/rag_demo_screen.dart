@@ -473,7 +473,7 @@ class _RagDemoScreenState extends State<RagDemoScreen> {
               if (_results.isNotEmpty) ...[
                 const Text(
                   'Results',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.cyanAccent), //TBD1
                 ),
                 const SizedBox(height: 8),
                 ..._results.map((result) => ResultCard(result: result)),

@@ -31,6 +31,7 @@ class SearchSection extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         TextField(
+          style: const TextStyle(color: Colors.cyan),
           controller: controller,
           decoration: InputDecoration(
             labelText: 'Search Query',

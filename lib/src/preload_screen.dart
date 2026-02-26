@@ -296,7 +296,7 @@ class _PreloadScreenState extends State<PreloadScreen> {
     );
 
     if (widget.model!.localModel) {
-      await installer.fromAsset(widget.model!.url).install();
+      await installer.fromAsset(widget.model!.baseUrl).install(); //TBD1
     } else {
       String? token = widget.model!.needsAuth ? await AuthTokenService.loadToken() : null;
       await installer.fromNetwork(widget.model!.url, token: token).install();

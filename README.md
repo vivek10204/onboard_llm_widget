@@ -17,15 +17,15 @@ A massive shoutout to [DenisovAV](https://github.com/DenisovAV) and the [flutter
 
 <br>
 
-| Chat Interface | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |                                    Select LLM Model                                     |
+| Chat Interface | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |                                    HuggingFace Auth                                     |
 | :---: | :---: |:---------------------------------------------------------------------------------------:|
-| <img src="images/screenshot5-chat.png" alt="Chat Interface" width="300"/> | &nbsp; | <img src="images/screenshot4-select-llm-model.png" alt="Select LLM Model" width="300"/> |
+| <img src="images/screenshot5-chat.png" alt="Chat Interface" width="300"/> | &nbsp; | <img src="images/screenshot3-huggingface-authentication.png" alt="HuggingFace Auth" width="300"/> |
 
 <br>
 
-| HuggingFace Auth | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |                                    Select RAG Model                                     |
+| Select LLM Model | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |                                    Select RAG Model                                     |
 | :---: | :---: |:---------------------------------------------------------------------------------------:|
-| <img src="images/screenshot3-huggingface-authentication.png" alt="HuggingFace Auth" width="300"/> | &nbsp; | <img src="images/screenshot6-select-rag-model.png" alt="Select RAG Model" width="300"/> |
+| <img src="images/screenshot4-select-llm-model.png" alt="Select LLM Model" width="300"/> | &nbsp; | <img src="images/screenshot6-select-rag-model.png" alt="Select RAG Model" width="300"/> |
 
 <br>
 

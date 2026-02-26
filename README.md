@@ -15,17 +15,17 @@ A massive shoutout to [DenisovAV](https://github.com/DenisovAV) and the [flutter
 |:----------------------------------------------------------:|:------------------------------------------------------------------------:|
 | ![One-Click Setup](images/screenshot1-one-click-setup.png) | ![Seamless Orchestration](images/screenshot2-seamless-orchestration.png) |
 
-|                            HuggingFace Auth                            |                 Select LLM Model                 |
-|:----------------------------------------------------------------------:|:----------------------------------------------:|
-| ![HuggingFace Auth](images/screenshot3-huggingface-authentication.png) | ![Select LLM Model](images/screenshot4-select-llm-model.jpg) |
+|                            HuggingFace Auth                            |                       Select LLM Model                       |
+|:----------------------------------------------------------------------:|:------------------------------------------------------------:|
+| ![HuggingFace Auth](images/screenshot3-huggingface-authentication.png) | ![Select LLM Model](images/screenshot4-select-llm-model.png) |
 
-|                            Chat Interface                            |                 Select RAG Model                 |
-|:----------------------------------------------------------------------:|:----------------------------------------------:|
-| ![Chat Interface](images/screenshot5-chat.png) | ![Select RAG Model](images/screenshot6-select-rag-model.jpg) |
+|                            Chat Interface                            |                       Select RAG Model                       |
+|:----------------------------------------------------------------------:|:------------------------------------------------------------:|
+| ![Chat Interface](images/screenshot5-chat.png) | ![Select RAG Model](images/screenshot6-select-rag-model.png) |
 
-|                            Upload Knowledge Base                            |                 Perform RAG Search                 |
-|:----------------------------------------------------------------------:|:----------------------------------------------:|
-| ![Upload Knowledge Base](images/screenshot7-upload-knowledge-base.jpg) | ![Perform RAG Search](images/screenshot8-perform-rag-search.jpg) |
+|                         Upload Knowledge Base                          |                        Perform RAG Search                        |
+|:----------------------------------------------------------------------:|:----------------------------------------------------------------:|
+| ![Upload Knowledge Base](images/screenshot7-upload-knowledge-base.png) | ![Perform RAG Search](images/screenshot8-perform-rag-search.png) |
 
 ## ✨ Features
 * **Single-Click Preload & Orchestration:** Automatically orchestrate the downloading and initialization of LLM chat models, RAG embedding models, and the vectorization/upload of your custom Knowledge Base data—all executed flawlessly from a single user prompt.

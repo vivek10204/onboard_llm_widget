@@ -1,7 +1,7 @@
 # onboard_llm_widget 🚀
 
 **Local AI made effortless!**
-* Turn the complex process - downloading local LLMs and RAG models and uploading Knowledge Base - into a single, beautiful, plug-and-play Flutter widget.
+* Turn the complex process - Downloading local LLM and RAG models, and Uploading Knowledge Base - into a single, beautiful, plug-and-play Flutter widget.
 
 **Single-Click Preload & Orchestration**
 * Provide your users with a smooth onboarding experience with a single click - handling hardware selection, model initialization, and data preloading - before seamlessly dropping them into a fully functional chat interface!

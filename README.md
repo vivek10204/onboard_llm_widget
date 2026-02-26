@@ -38,7 +38,7 @@ A massive shoutout to [DenisovAV](https://github.com/DenisovAV) and the [flutter
 Add the package to your `pubspec.yaml`:
 
     dependencies:
-      onboard_llm_widget: ^0.0.6
+      onboard_llm_widget: ^0.0.7
 
 ## 💻 Usage
 

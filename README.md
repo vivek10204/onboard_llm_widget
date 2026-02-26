@@ -11,27 +11,27 @@ A massive shoutout to [DenisovAV](https://github.com/DenisovAV) and the [flutter
 
 ## 📸 Screenshots
 
-|                                        One-Click Setup                                         |                                            Seamless Orchestration                                            |
-|:----------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------:|
-|     <img src="images/screenshot1-one-click-setup.png" alt="One-Click Setup" width="300"/>      |     <img src="images/screenshot2-seamless-orchestration.png" alt="Seamless Orchestration" width="300"/>      |
+| One-Click Setup | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Seamless Orchestration |
+| :---: | :---: | :---: |
+| <img src="images/screenshot1-one-click-setup.png" alt="One-Click Setup" width="300"/> | &nbsp; | <img src="images/screenshot2-seamless-orchestration.png" alt="Seamless Orchestration" width="300"/> |
 
 <br>
 
-|                            HuggingFace Auth                            |                       Select LLM Model                       |
-|:----------------------------------------------------------------------:|:------------------------------------------------------------:|
-| <img src="images/screenshot3-huggingface-authentication.png" alt="HuggingFace Auth" width="300"/> | <img src="images/screenshot4-select-llm-model.png" alt="Select LLM Model" width="300"/> |
+| HuggingFace Auth | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Select LLM Model |
+| :---: | :---: | :---: |
+| <img src="images/screenshot3-huggingface-authentication.png" alt="HuggingFace Auth" width="300"/> | &nbsp; | <img src="images/screenshot4-select-llm-model.png" alt="Select LLM Model" width="300"/> |
 
 <br>
 
-|                            Chat Interface                            |                       Select RAG Model                       |
-|:----------------------------------------------------------------------:|:------------------------------------------------------------:|
-| <img src="images/screenshot5-chat.png" alt="Chat Interface" width="300"/> | <img src="images/screenshot6-select-rag-model.png" alt="Select RAG Model" width="300"/> |
+| Chat Interface | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Select RAG Model |
+| :---: | :---: | :---: |
+| <img src="images/screenshot5-chat.png" alt="Chat Interface" width="300"/> | &nbsp; | <img src="images/screenshot6-select-rag-model.png" alt="Select RAG Model" width="300"/> |
 
 <br>
 
-|                         Upload Knowledge Base                          |                        Perform RAG Search                        |
-|:----------------------------------------------------------------------:|:----------------------------------------------------------------:|
-| <img src="images/screenshot7-upload-knowledge-base.png" alt="Upload Knowledge Base" width="300"/> | <img src="images/screenshot8-perform-rag-search.png" alt="Perform RAG Search" width="300"/> |
+| Upload Knowledge Base | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Perform RAG Search |
+| :---: | :---: | :---: |
+| <img src="images/screenshot7-upload-knowledge-base.png" alt="Upload Knowledge Base" width="300"/> | &nbsp; | <img src="images/screenshot8-perform-rag-search.png" alt="Perform RAG Search" width="300"/> |
 
 ## ✨ Features
 * **Single-Click Preload & Orchestration:** Automatically orchestrate the downloading and initialization of LLM chat models, RAG embedding models, and the vectorization/upload of your custom Knowledge Base data—all executed flawlessly from a single user prompt.

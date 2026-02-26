@@ -1,6 +1,6 @@
 name: onboard_llm_widget
 description: "Flutter Onboard LLM widget for Android and iOS"
-version: 0.0.7
+version: 0.0.8
 homepage: https://github.com/vivek10204/onboard_llm_widget
 
 #environment:

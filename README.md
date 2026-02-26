@@ -82,50 +82,50 @@ Just drop and customize the `LlmWidget` into your app's widget tree like below! 
 ## ⚙️ Parameters
 
 * **`appName`** *(String?)*:
-* App title.
-* 
+      App title.
+
 * **`backgroundColor`** *(Color?)*:
-* Background color of the widget screens.
-* 
+      Background color of the widget screens.
+
 * **`chatAvatarImagePath`** *(String?)*:
-* AI's avatar image path in the chat screen (eg: "assets/image1.png").
-* 
+      AI's avatar image path in the chat screen (eg: "assets/image1.png").
+
 * **`preamble`** *(String?)*:
-* System prompt injected before the last message to set the AI's behavior, rules and personality. Go ahead, ask it to talk like a pirate, matey!
-* 
+      System prompt injected before the last message to set the AI's behavior, rules and personality. Go ahead, ask it to talk like a pirate, matey!
+
 * **`bypassSelectionScreen`** *(bool?)*:
-* If `true`, skips the model selection UI entirely and jumps to chat (requires LLM and/or RAG models to be preloaded). Can be bypassed to hide complexity from end-user.
-* 
+      If `true`, skips the model selection UI entirely and jumps to chat (requires LLM and/or RAG models to be preloaded). Can be bypassed to hide complexity from end-user.
+
 * **`enableRag`** *(bool?)*:
-* Master switch to enable Retrieval-Augmented Generation capabilities. This enables RAG search whenever LLM is prompted, and the search output will be appended back to final LLM prompt, under 'CONTEXT' section!
-* 
+      Master switch to enable Retrieval-Augmented Generation capabilities. This enables RAG search whenever LLM is prompted, and the search output will be appended back to final LLM prompt, under 'CONTEXT' section!
+
 * **`enableRagButton1`** *(bool?)*:
-* Toggles visibility of the "Select RAG Model" button in the UI dropdown. Can be disabled to hide complexity from end-user, if model is preloaded.
-* 
+      Toggles visibility of the "Select RAG Model" button in the UI dropdown. Can be disabled to hide complexity from end-user, if model is preloaded.
+
 * **`enableRagButton2`** *(bool?)*:
-* Toggles visibility of the "RAG Input & Settings" button in the UI dropdown. Can be disabled to hide complexity from end-user, if knowledge base is preloaded.
-* 
+      Toggles visibility of the "RAG Input & Settings" button in the UI dropdown. Can be disabled to hide complexity from end-user, if knowledge base is preloaded.
+
 * **`preloadModelsMandatory`** *(String?)*:
-* Accepts `'yes'`, `'no'`, or `'ask'`. Customize if the user is free to download any models, or prompted/mandated to download specific models.
-* 
+      Accepts `'yes'`, `'no'`, or `'ask'`. Customize if the user is free to download any models, or prompted/mandated to download specific models.
+
 * **`preloadModelName`** *(String?)*:
-* The exact identifier of the default chat model to fetch for LLM chat. See reference model names here: https://github.com/DenisovAV/flutter_gemma/blob/96b881f9ffde6f5783b4ded36c40913fefa0c935/example/lib/models/model.dart
-* 
+      The exact identifier of the default chat model to fetch for LLM chat. See reference model names here: https://github.com/DenisovAV/flutter_gemma/blob/96b881f9ffde6f5783b4ded36c40913fefa0c935/example/lib/models/model.dart
+
 * **`preloadModelBackend`** *(String?)*:
-* Forces the chat model to run on `'cpu'` or `'gpu'`.
-* 
+      Forces the chat model to run on `'cpu'` or `'gpu'`.
+
 * **`preloadEmbeddingModelName`** *(String?)*:
-* The exact identifier of the default embedding model to fetch for RAG tasks.  See reference model names here: https://github.com/DenisovAV/flutter_gemma/blob/96b881f9ffde6f5783b4ded36c40913fefa0c935/example/lib/models/embedding_model.dart
-* 
+      The exact identifier of the default embedding model to fetch for RAG tasks.  See reference model names here: https://github.com/DenisovAV/flutter_gemma/blob/96b881f9ffde6f5783b4ded36c40913fefa0c935/example/lib/models/embedding_model.dart
+
 * **`preloadEmbeddingModelBackend`** *(String?)*:
-* Forces the embedding model to run on `'cpu'` or `'gpu'`.
-* 
+      Forces the embedding model to run on `'cpu'` or `'gpu'`.
+
 * **`preloadInputData`** *(String?)*:
-* The raw string data to vectorize and preload (e.g., CSV content in plain conversational text). Individual lines are uploaded independently in the Knowledge Base.
-* 
+      The raw string data to vectorize and preload (e.g., CSV content in plain conversational text). Individual lines are uploaded independently in the Knowledge Base.
+
 * **`preloadInputDataMandatory`** *(String?)*:
-* Accepts `'yes'`, `'no'`, or `'ask'`. Customize if the user is mandated to vectorize the input data, or try uploading custom files manually.
-* 
+      Accepts `'yes'`, `'no'`, or `'ask'`. Customize if the user is mandated to vectorize the input data, or try uploading custom files manually.
+
 
 
 ## ⚠️ Current Limitations (Still Experimental)
